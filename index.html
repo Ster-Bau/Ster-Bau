@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ster-Bau | Solaranlagen</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('hintergrundbild.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: top;
+            background-size: 100%;
+            animation: scrollBackground 30s linear infinite;
+        }
+
+        @keyframes scrollBackground {
+            0% {
+                background-position: top;
+            }
+            100% {
+                background-position: bottom;
+            }
+        }
+
+        .header {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: transparent;
+        }
+        
+        .image-container {
+            display: flex;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            height: 600px; /* Beispielbreite, anpassen wie gewünscht */
+            margin-right: 10px;
+            animation: slideToLeft 45s linear infinite;
+        }   
+
+        @keyframes slideToLeft {
+            0% {
+            transform: translateX(0%);
+            }
+            100% {
+            transform: translateX(-100%);
+            }
+        }
+
+
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            height: 60px;
+            width: auto;
+        }
+
+        .logo-container img {
+            height: 60px;
+            width: auto;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border: 2px solid black;
+            justify-content: flex-end;
+        }
+
+        .title {
+            margin: 10px 0;
+            font-size: 24px;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #87cefa; /* Baby Blau */
+        }
+
+        .reiter {
+            padding: 20px;
+            margin-top: 30px;
+            background-color: #87cefa; /* Baby Blau */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            border: 2px solid black;
+            margin-bottom: 30px;
+        }
+
+        .reiter h2 {
+            background-color: white;
+            padding: 10px;
+            margin: 0;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        .reiter p {
+            background-color: white;
+            padding: 10px;
+            margin: 0;
+            border: none;
+            border-top: none;
+            border-radius: 0 0 5px 5px;
+        }
+
+        .reiter-container {
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+
+        .reiter-line {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #87cefa; /* Baby Blau */
+            padding: 10px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        .reiter-line a {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+            padding: 5px;
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+        }
+
+        .reiter-line a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .footer {
+            background-color: #87cefa; /* Baby Blau */
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <a href="https://www.example.com"><img src="logo.jpg" alt="Logo der Baufirma" /></a>
+        </div>
+        <div class="logo-container-right">
+            <a href="https://www.instagram.com/ster_bau/"><img src="instagram_logo.jpg" alt="Instagram Logo" style="height: 60px; width: auto; border: 2px solid black;"/></a>
+        </div>
+    </div>
+    <p>&nbsp;</p>
+    <div class="image-container">
+        <img src="banner.jpg" alt="Banner">
+      </div>
+      
+    <div>
+        <h1 class="title">Baufirma für PV-Anlagen</h1>
+    </div>
+    
+    <div class="reiter-line">
+        <a href="#ster-bau">Ster-Bau</a>
+        <a href="#referenzen">Referenzen</a>
+        <a href="#ueber-uns">Über uns</a>
+        <a href="#angebot-anfragen">Angebot anfragen</a>
+    </div>
+    <div class="reiter" id="ster-bau">
+        <div class="reiter-container">
+            <h2>Ster-Bau</h2>
+            <p>Willkommen bei Ster-Bau!</p>
+            <p>Wir bieten hochwertige und effiziente PV-Anlagen, die Ihre Energiekosten senken und zur Energiewende beitragen.</p>
+            <p>Unsere maßgeschneiderten PV-Anlagen erfüllen die spezifischen Anforderungen Ihrer Immobilie. Mit langjähriger Erfahrung und Expertise bieten wir technisch ausgereifte Lösungen, die auch ästhetisch ansprechend sind. PV-Anlagen nutzen Sonnenenergie, reduzieren unseren CO2-Fußabdruck und helfen aktiv beim Kampf gegen den Klimawandel. Außerdem werden Sie unabhängiger von fossilen Brennstoffen. Unsere qualifizierten Planer und Installateure arbeiten eng mit Ihnen zusammen, um Ihre individuellen Bedürfnisse zu erfüllen.</p>
+            <p>Qualität, Zuverlässigkeit und Kundenzufriedenheit stehen dabei im Mittelpunkt. Wir betreuen jedes Projekt professionell von Anfang bis Ende. Entdecken Sie die Vorteile der sauberen Energie und bauen Sie mit uns gemeinsam eine nachhaltige Zukunft.</p> 
+            <p>Kontaktieren Sie uns noch heute für weitere Informationen oder ein Angebot für Ihre PV-Anlage.</p>
+        </div>    
+    </div>
+
+    <div class="reiter" id="referenzen">
+        <div class="reiter-container">
+            <h2>Referenzen</h2>
+            <p>Unsere Expertise und unser Engagement haben uns ermöglicht, eine Vielzahl erfolgreicher Projekte abzuschließen. Hier sind einige unserer Referenzen:</p>
+            <ul>
+                <li>Projekt A: Installation einer PV-Anlage auf einem Mehrfamilienhaus in der Stadt XYZ.</li>
+                <li>Projekt B: Bau einer Solaranlage auf dem Dach eines Gewerbegebäudes für ein Unternehmen in der Branche XYZ.</li>
+                <li>Projekt C: Errichtung einer PV-Anlage auf einem landwirtschaftlichen Betrieb zur Eigenstromnutzung.</li>
+            </ul>
+            <p>Unsere zufriedenen Kunden schätzen unsere präzise Planung, professionelle Installation und qualitativ hochwertige Arbeit. Wir sind stolz darauf, mit jedem Projekt unseren Kunden maßgeschneiderte Lösungen zu bieten.</p>
+            <p>Wenn Sie Interesse an unseren Dienstleistungen haben, stehen wir Ihnen gerne zur Verfügung. Wir machen genaue Planungen und erstellen Ihnen gerne ein unverbindliches Angebot.</p>
+        </div>
+    </div>
+
+    <div class="reiter" id="ueber-uns">
+        <div class="reiter-container">
+            <h2>Über uns</h2>
+            <p>Herzlich willkommen bei der Baufirma für PV-Anlagen! Wir sind ein engagiertes Team von Experten mit langjähriger Erfahrung in der Planung und Installation von Photovoltaik-Anlagen.</p>
+            <p>Unser Ziel ist es, nachhaltige Energielösungen zu schaffen, die nicht nur Ihren Bedürfnissen entsprechen, sondern auch die Umwelt schützen. Wir glauben an die Kraft der Sonnenenergie und ihr Potenzial, die Welt zu verändern.</p>
+            <p>Was uns von anderen Unternehmen unterscheidet, ist unsere persönliche Nähe zu unseren Kunden. Wir verstehen, dass jedes Projekt einzigartig ist und individuelle Anforderungen erfordert. Daher legen wir großen Wert auf eine enge Zusammenarbeit und bieten maßgeschneiderte Lösungen, die Ihren Bedürfnissen gerecht werden.</p>
+            <p>Unser erfahrenes Team steht Ihnen zur Seite, um Sie durch den gesamten Prozess zu begleiten. Von der ersten Beratung über die detaillierte Planung bis hin zur Installation und Wartung Ihrer PV-Anlage - wir sind Ihr vertrauensvoller Partner.</p>
+            <p>Wenn Sie mehr über uns erfahren möchten oder Fragen zu unseren Dienstleistungen haben, zögern Sie nicht, uns zu kontaktieren. Wir freuen uns darauf, Ihnen bei Ihrem nachhaltigen Energieprojekt zu helfen!</p>
+        </div>
+    </div>
+
+    <div class="reiter" id="angebot-anfragen">
+        <div class="reiter-container">
+            <h2>Angebot anfragen</h2>
+            <p>Sie interessieren sich für eine PV-Anlage? Wir freuen uns darauf, Ihnen ein unverbindliches Angebot zu erstellen und Sie bei Ihrem nachhaltigen Energieprojekt zu unterstützen.</p>
+            <p>Unser Angebotserstellungsprozess umfasst folgende Schritte:</p>
+            <ol>
+                <li>Beratungsgespräch: In einem persönlichen Gespräch besprechen wir Ihre Anforderungen und Wünsche.</li>
+                <li>Standortanalyse: Wir führen eine detaillierte Analyse des Standorts durch, um die optimale Platzierung der PV-Anlage zu bestimmen.</li>
+                <li>Planung und Angebot: Basierend auf den Informationen aus dem Beratungsgespräch und der Standortanalyse erstellen wir eine maßgeschneiderte Planung und ein detailliertes Angebot.</li>
+                <li>Installation: Sobald Sie das Angebot annehmen, beginnen wir mit der professionellen Installation Ihrer PV-Anlage.</li>
+                <li>Wartung und Service: Wir bieten regelmäßige Wartungs- und Servicedienstleistungen an, um sicherzustellen, dass Ihre PV-Anlage optimal funktioniert.</li>
+            </ol>
+            <p>Um ein Angebot anzufordern oder weitere Informationen zu erhalten, füllen Sie bitte das Kontaktformular auf unserer Website aus oder rufen Sie uns an.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <ul>
+            <li><a href="#unser-produkt">Unser Produkt</a></li>
+            <li><a href="#referenzen">Referenzen</a></li>
+            <li><a href="#ueber-uns">Über uns</a></li>
+            <li><a href="#angebot-anfragen">Angebot anfragen</a></li>
+        </ul>
+        <p>&copy; 2023 Baufirma für PV-Anlagen | Alle Rechte vorbehalten | <a href="impressum.html">Impressum</a> | <a href="Datenschutz.html">Datenschutz</a></p>
+    </div>
+</body>
+</html>
