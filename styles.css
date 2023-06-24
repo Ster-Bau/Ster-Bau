@@ -1,0 +1,253 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('hintergrundbild.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: 100%;
+    animation: scrollBackground 210s linear infinite;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes scrollBackground {
+    0% {
+        background-position: top;
+    }
+    100% {
+        background-position: bottom;
+    }
+}
+
+.header {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+/*Banner Werbung*/
+
+
+.ad-container {
+    width: 100%;
+    overflow: hidden;
+    color: #000000;
+    background-color: transparent;
+    position: relative;
+    margin-top: 30px;
+    
+  }
+
+  .ad {
+    display: inline-block;
+    white-space: nowrap;
+    animation: ad-animation 40s linear infinite;
+    
+    
+  }
+
+  @keyframes ad-animation {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+  }
+
+.image-container {
+    display: flex;
+    overflow: hidden;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.image-container img {
+    height: 450px; /* Beispielhöhe, anpassen wie gewünscht */
+    margin-right: 0;
+    animation: slideToLeft 90s linear infinite;
+    
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}   
+
+@keyframes slideToLeft {
+    0% {
+    transform: translateX(30%);
+    }
+    100% {
+    transform: translateX(-100%);
+    }
+}
+
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 60px;
+    width: auto;
+}
+
+.logo-container img {
+    height: 60px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid black;
+    justify-content: flex-end;
+    
+
+}
+
+.title {
+    margin: 10px 0;
+    font-size: 24px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #ffffff; 
+    
+}
+
+.reiter {
+    padding: 20px;
+    margin-top: 25px;
+    background-color: #87cefa7a; /* Baby Blau leicht durchsichtig*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.reiter h2 {
+    background-color: white;
+    padding: 10px;
+    margin: 0;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.reiter p {
+    background-color: white;
+    padding: 10px;
+    margin: 0;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    
+}
+
+.reiter-container {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+.reiter-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #87cefa7a; /* Baby Blau leicht durchsichtig*/
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.reiter-line a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.reiter-line a:hover {
+    background-color: black;
+    color: white;
+}
+
+/*Kontaktformular*/
+.container kf {
+    max-width: 400px;
+    margin: auto;
+    padding: 10px;
+    background-color: #e3f2fd;
+    border-radius: 5px;
+    align-items: right;
+    background-color: #87cefa7a; /* Baby Blau leicht durchsichtig*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+    
+  }
+  .form-group {
+    margin: 25px;
+    
+  }
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"] {
+    width: 70%;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    
+    
+  }
+  
+  .form-group button {
+    background-color: #2196f3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+
+
+.footer {
+    background-color: #87cefa7a; /* Baby Blau leicht durchsichtig*/
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+}
